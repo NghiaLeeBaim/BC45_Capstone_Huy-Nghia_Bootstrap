@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {}
+
+.container {
+  max-width: 1080px;
+}
+
+#header {
+  margin: 20px 0px;
+  position: relative;
+}
+
+#header .container .navbar .container-fluid .collapse{
+  margin-left: 200px;
+}
+
+#header .container .navbar .container-fluid .collapse li{
+  margin-right: 10px;
+}
+
+/* Light theme */
+#main-body{
+  background-color:black;
+}
+#switchButton {
+  background-color: white;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#main-body{
+  background-color:white;
+}
+.dark #switchButton {
+  background-color: black;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+.dark .card {
+  background-color: black;
+  color: white;
+}
