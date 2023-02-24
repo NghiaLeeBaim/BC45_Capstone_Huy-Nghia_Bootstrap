@@ -6,3 +6,90 @@
 }
 
 /* -------------CSS LÊ ĐÌNH HUY---------------- */
+/* -----------------Title video CSS---------------- */
+/**
+ * Simple fade transition,
+ */
+
+#small-dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+
+.mfp-close,
+.mfp-close:active {
+    top: -40px;
+}
+
+/**
+   * Fade-zoom animation for first dialog
+   */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.95;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.plan_icon{
+    font-size: 60px;
+    /* border: 3px solid green; */
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    padding-left: 5px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    /* background-color: #fff;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 50px; */
+    transition: 0.5s;
+}
+.plan_icon:hover{
+    background-color: red;
+    transition: all 0.5s;
+}
