@@ -6,11 +6,13 @@
 }
 
 /* -------------CSS LÊ ĐÌNH HUY---------------- */
+/* NUMBER */
+/* .percent {
+    font-size: 72px;
+    position: absolute;
+    left: 45%;
+  } */
 /* -----------------Title video CSS---------------- */
-/**
- * Simple fade transition,
- */
-
 #small-dialog {
     max-width: 750px;
     margin: 40px auto;
@@ -97,7 +99,52 @@ div#small-dialog iframe {
 
 /* CAROUSEL SLIDES */
 .carousel-indicators button{
-    width: 10px !important;
-    height: 10px !important;
+    width: 12px !important;
+    height: 12px !important;
     border-radius: 50% !important;
+    background-color: gray !important;
+    transition: all 0.3s;
+}
+.carousel-indicators button:hover{
+    background-color: green !important;
+    width: 50px !important;
+    height: 10px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s linear;
+}
+
+/* CONTACT-UPDATE */
+.contact-input{
+    border-radius: 10px !important;
+}
+.contact-input:hover{
+    border: 2px solid green ;
+    transition: all 0.3s linear;
+}
+.contact-input-button{
+    border-radius: 10px !important; 
+}
+.contact-input-button:hover{
+    background-color: rgb(3, 94, 3) !important;
+    transition: all 0.5s;
+}
+/* FOOTER */
+.text__hover:hover{
+    color: #fff !important;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+.footer___text:hover{
+    text-decoration-line: underline;
+    color: rgb(255, 0, 0) !important;
+    transition: all 1s;
+}
+.footer__list:hover{
+    color: #fff !important;
+    transition: all 0.5s;
+}
+.icons__footer:hover{
+    color: aliceblue !important;
+    font-size: 30px;
+    transition: all 0.5s;
 }

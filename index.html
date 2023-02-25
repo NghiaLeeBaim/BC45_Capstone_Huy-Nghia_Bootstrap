@@ -21,28 +21,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link video  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
         integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-
+<body class="w-100">
+    <!-- PHẦN NUMBER ĐẾN PHẦN FOOTER -->
 
     <!-- NUMBER -->
-    <section class="number bg-success w-100 h-25">
-        <div class="container  row ">
-            <div class="col-3">
 
+    <section class="number bg-success" style="height: 100%px !important;">
+        <div class="container row mx-auto text-center">
+            <div class="plan-number col-md-6 col-lg-3 col-12">
+                <div class="percent1 text-light fw-bold" style="font-size: 70px;">0</div>
+                <p class="fs-2 text-light">Happy Clients</p>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="plan-number col-md-6 col-lg-3 col-12">
+                <div class="percent2 text-light fw-bold" style="font-size: 70px;">0</div>
+                <p class="fs-2 text-light">Professionals</p>
+            </div>
+            <div class="plan-number col-md-6 col-lg-3 col-12">
+                <div class="percent3 text-light fw-bold" style="font-size: 70px;">0</div>
+                <p class="fs-2 text-light">Adopted Pets</p>
+            </div>
+            <div class="plan-number col-md-6 col-lg-3 col-12">
+                <div class="percent4 text-light fw-bold" style="font-size: 70px;">0</div>
+                <p class="fs-2 text-light">Awards</p>
+            </div>
         </div>
     </section>
-    <section class="plan" style="background-color: rgb(236, 242, 243) !important;">
+
+
+    <!-- PLAN_còn khoảng cachsa giữa các bảng vẫn chưa chỉnh được -->
+
+    <section class="plan" style="background-color: rgb(236, 242, 243) !important;width: 100%;">
         <div class="container">
+            <br><br><br>
             <h1 class="text-danger-emphasis text-center fs-2" stlyle="margin-top: 70px !important;">Our Plan</h1>
             <h2 class="text-black text-center mt-4" style="font-size: 60px !important; font-weight: 600 !important;">
                 Affordable Packages</h2>
@@ -113,6 +132,7 @@
 
 
     <!-- VIDEO -->
+
     <section class="title-video">
         <div class="container text-center" style="margin-top: 150px !important;">
             <h4 class="text-danger">BETTER PET NUTRITION</h4>
@@ -125,12 +145,11 @@
             </p>
         </div>
         <div class="plan_video text-center mt-5 position-relative">
-            <img src="/image/banner2.jpg" style="max-width: 1200px;max-height: 500px;" class="rounded-3">
-
-
             <a href="#small-dialog" class="open-popup-link popup-with-zoom-anim">
+                <img src="/image/banner2.jpg"  class="rounded-3 w-75 h-50">
                 <i
-                    class="plan_icon fa-solid fa-play d-inline-block text-light position-absolute top-50 start-50 translate-middle z-1"></i>
+                    class="plan_icon fa-solid fa-play d-inline-block text-light position-absolute top-50 start-50 translate-middle z-1">
+                </i>
             </a>
 
             <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
@@ -141,24 +160,25 @@
     </section>
     <br><br><br><br><br><br><br><br>
 
-    <!-- CLIENTS -->
-    <section class="clients" style="background-color: rgb(236, 242, 243);">
+
+    <!-- CLIENTS-CAROUSEL_còn một số lỗi chưa fix được -->
+
+    <section class="clients" style="background-color: rgb(236, 242, 243);width: 100%;">
         <div class="clients_title text-center">
             <p class="text-danger fs-2">TESTIMONIALS</p>
             <h1 class="text-black fw-bold mb-5">Happy Clients & Feedbacks</h1>
         </div>
 
-        <!-- plan carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" style="width: 100% !important;height: 500px;">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active mx-3 text-secondary"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active mx-3 text-secondary"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active mx-3 text-secondary"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active mx-3 text-secondary"
-                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active mx-3" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    class="active mx-3" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    class="active mx-3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    class="active mx-3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner ">
                 <div class="carousel-item active">
@@ -281,10 +301,134 @@
         </div>
 
     </section>
-    <section class="contact_update"></section>
-    <footer class="footer"></footer>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <!-- CONTACT-UPDATE -->
+
+    <section class="contact_update w-100">
+        <div class="contact_update-title text-center">
+            <h1 class="text-black fw-bold" style="margin-top: 100px; font-size: 50px;">Stay Updated!</h1>
+            <p class="fs-4 text-secondary mt-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia <br> Curae;
+                Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.
+                Integer sit <br> amet mattis quam.
+            </p>
+            <div class="contact_update-input w-75 mx-auto" style="margin-top: 80px;">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control fs-4 contact-input" placeholder="Add your Email..."
+                        aria-label="Recipient's username" aria-describedby="button-addon2" style="height: 80px;">
+                    <button class="btn btn-outline-secondary w-25 contact-input-button fs-4 ms-2" type="button" id="button-addon2" style="height: 80px;">Subcribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer bg-black">
+        <br><br><br>
+        <div class=" container row">
+            <div class="col-lg-5 col-md-6 col-12">
+                <h3 class="text-light">Contact information</h3>
+                <br>
+                <div class="footer-menu">
+                    <p>
+                        <span class="text-secondary-emphasis fs-5 fw-bold">Address :</span>
+                        <span class="text-secondary-emphasis fs-5">#135 block, Barnard St. Brooklyn, London 10036,
+                            UK</span>
+                    </p>
+                    <p>
+                        <span class="text-secondary-emphasis fs-5 fw-bold">Phone :</span>
+                        <a href="#"
+                            class="text__hover text-secondary-emphasis fs-5 text-decoration-none">+(12)234-11-24</a>
+                    </p>
+                    <p>
+                        <span class="text-secondary-emphasis fs-5 fw-bold">Email :</span>
+                        <a href="#"
+                            class="text__hover text-secondary-emphasis fs-5 text-decoration-none">example@mail.com</a>
+                    </p>
+                    <div class="footer-icon fs-4">
+                        <a href="#" class="d-inline-block text-decoration-none">
+                            <i class="icons__footer fa fa-facebook-f d-inline-block text-decoration-none text-secondary-emphasis ms-0"
+                                aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="d-inline-block text-decoration-none">
+                            <i class="icons__footer fa fa-twitter d-inline-block text-decoration-none text-secondary-emphasis ms-4"
+                                aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="d-inline-block text-decoration-none">
+                            <i class="icons__footer fa fa-dribbble d-inline-block text-decoration-none text-secondary-emphasis ms-4"
+                                aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="d-inline-block text-decoration-none">
+                            <i class="icons__footer fa fa-google d-inline-block text-decoration-none text-secondary-emphasis ms-4"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h3 class="text-light">Company</h3> <br>
+                <div class="text-secondary-emphasis">
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Blog Posts</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">About us</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Services</a><br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Pricing</a> <br> <br>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h3 class="text-light">Quick Links</h3> <br>
+                <div class="text-secondary-emphasis">
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Contact
+                        us</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Create
+                        account</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Care
+                        Center</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Stie
+                        Feedback</a> <br> <br>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+                <h3 class="text-light">Support</h3> <br>
+                <div class="text-secondary-emphasis">
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">All
+                        Dogs</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Care
+                        Advices</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Care
+                        Support</a> <br> <br>
+                    <a href="#"
+                        class="footer__list fs-5 d-inline-block text-secondary-emphasis text-decoration-none">Veterinary
+                        Help</a> <br> <br>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid gray;"> <br>
+        <p class="text-center">
+            <span class="text-secondary-emphasis fs-5">
+                © 2020 Pooch Care. All Rights Reserved. Design by
+            </span>
+            <span>
+                <a href="#" class="footer___text d-inline-block text-decoration-none text-danger fs-4">W3Layouts</a>
+            </span>
+        </p>
+        <br><br><br><br>
+    </footer>
+
 
     <!-- link js custom -->
     <script src="/js/index.js"></script>
@@ -299,6 +443,98 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
         integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- CODE NUMBER -->
+    <script>
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        var percentEl = document.querySelector('.percent1');
+        var max = 730;
+
+        (function animloop() {
+            if (percentEl.innerHTML >= max) { return; } //Stop recursive when max reach
+            requestAnimFrame(animloop);
+            percentEl.innerHTML++;
+        })();
+    </script>
+
+    <script>
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        var percentEl1 = document.querySelector('.percent2');
+        var max2 = 80;
+
+        (function animloop2() {
+            if (percentEl1.innerHTML >= max2) { return; } //Stop recursive when max reach
+            requestAnimFrame(animloop2);
+            percentEl1.innerHTML++;
+        })();
+    </script>
+
+    <script>
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        var percentEl3 = document.querySelector('.percent3');
+        var max3 = 812;
+
+        (function animloop3() {
+            if (percentEl3.innerHTML >= max3) { return; } //Stop recursive when max reach
+            requestAnimFrame(animloop3);
+            percentEl3.innerHTML++;
+        })();
+    </script>
+
+    <script>
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        var percentEl4 = document.querySelector('.percent4');
+        var max4 = 90;
+
+        (function animloop4() {
+            if (percentEl4.innerHTML >= max4) { return; } //Stop recursive when max reach
+            requestAnimFrame(animloop4);
+            percentEl4.innerHTML++;
+        })();
+    </script>
+
+
     <!-- ĐOẠN CODE JS CỦA PHẦN VIDEO -->
     <script>
         $(document).ready(function () {
